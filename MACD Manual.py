@@ -16,9 +16,18 @@ class TachyonParticleAtmosphericScrubbers(QCAlgorithm):
         self.SetPortfolioConstruction(EqualWeightingPortfolioConstructionModel())
 
     
-        self.SetRiskManagement(MaximumUnrealizedProfitPercentPerSecurity(0.03))
+        self.SetRiskManagement(MaximumUnrealizedProfitPercentPerSecurity(0.01))
 #Add Counters here
-        symbols = [Symbol.Create("GOOG", SecurityType.Equity, Market.USA),  Symbol.Create("AAPL", SecurityType.Equity, Market.USA),Symbol.Create("BABA", SecurityType.Equity, Market.USA),Symbol.Create("V", SecurityType.Equity, Market.USA),Symbol.Create("GS", SecurityType.Equity, Market.USA),Symbol.Create("GSK", SecurityType.Equity, Market.USA),Symbol.Create("LLY", SecurityType.Equity, Market.USA),Symbol.Create("KHC", SecurityType.Equity, Market.USA),Symbol.Create("FDX", SecurityType.Equity, Market.USA),Symbol.Create("KMB", SecurityType.Equity, Market.USA)]
+        symbols = [Symbol.Create("GOOG", SecurityType.Equity, Market.USA),  
+        Symbol.Create("AAPL", SecurityType.Equity, Market.USA),
+        Symbol.Create("BABA", SecurityType.Equity, Market.USA),
+        Symbol.Create("V", SecurityType.Equity, Market.USA),
+        Symbol.Create("GS", SecurityType.Equity, Market.USA),
+        Symbol.Create("GSK", SecurityType.Equity, Market.USA),
+        Symbol.Create("LLY", SecurityType.Equity, Market.USA),
+        Symbol.Create("KHC", SecurityType.Equity, Market.USA),
+        Symbol.Create("FDX", SecurityType.Equity, Market.USA),
+        Symbol.Create("KMB", SecurityType.Equity, Market.USA)]
         self.SetUniverseSelection( ManualUniverseSelectionModel(symbols) )
 
 
