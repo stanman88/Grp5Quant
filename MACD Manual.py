@@ -31,13 +31,19 @@ class TachyonParticleAtmosphericScrubbers(QCAlgorithm):
         Symbol.Create("SBUX", SecurityType.Equity, Market.USA),
         Symbol.Create("MCD", SecurityType.Equity, Market.USA),
         Symbol.Create("KHC", SecurityType.Equity, Market.USA),
+        Symbol.Create("LLY", SecurityType.Equity, Market.USA),
+        Symbol.Create("CHGG", SecurityType.Equity, Market.USA),
+        Symbol.Create("FDX", SecurityType.Equity, Market.USA),
+        Symbol.Create("ETSY", SecurityType.Equity, Market.USA),
+        Symbol.Create("JMIA", SecurityType.Equity, Market.USA),
         Symbol.Create("SBSW", SecurityType.Equity, Market.USA),
         Symbol.Create("GS", SecurityType.Equity, Market.USA),
         Symbol.Create("HD", SecurityType.Equity, Market.USA),
         Symbol.Create("AZN", SecurityType.Equity, Market.USA),
-        Symbol.Create("BABA", SecurityType.Equity, Market.USA),
+        Symbol.Create("GSK", SecurityType.Equity, Market.USA),
         Symbol.Create("BLK", SecurityType.Equity, Market.USA),
-        Symbol.Create("KMB", SecurityType.Equity, Market.USA)]
+        Symbol.Create("BABA", SecurityType.Equity, Market.USA),
+        Symbol.Create("SPOT", SecurityType.Equity, Market.USA)]
         self.SetUniverseSelection( ManualUniverseSelectionModel(symbols) )
 
 
